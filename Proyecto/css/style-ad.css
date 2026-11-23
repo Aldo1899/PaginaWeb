@@ -1,0 +1,212 @@
+/*ESTILOS GENERALES DE LA PÁGINA*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #0b0c15;
+    color: #e8e8f0;
+    line-height: 1.6;
+}
+
+
+/*ENCABEZADO (nombre, foto y título)*/
+
+header {
+    text-align: center;
+    background-color: #1a1d2e;
+    padding: 30px 20px;
+    border-radius: 12px;
+    border: 1px solid #2a2d45;
+    border-top: 3px solid #00ff9d;
+    margin-bottom: 25px;
+}
+
+
+/*Foto de perfil*/
+
+.foto-perfil {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00ff9d;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+
+/* Nombre principal */
+
+header h1 {
+    margin: 0 0 8px 0;
+    color: #00ff9d;
+    font-size: 2em;
+}
+
+
+/* Carrera */
+
+header h2 {
+    margin: 0 0 10px 0;
+    color: #b0b0ff;
+    font-size: 1.1em;
+    font-weight: normal;
+}
+
+
+/* Frase de debajo del título */
+
+.subtitulo {
+    color: #ff6b9d;
+    font-style: italic;
+    margin: 0;
+}
+
+
+/* ========== SECCIONES DEL CV ========== */
+
+section {
+    background-color: #141625;
+    padding: 20px 25px;
+    margin-bottom: 18px;
+    border-radius: 12px;
+    border: 1px solid #2a2d45;
+    border-left: 4px solid #00ff9d;
+}
+
+
+/* Títulos de cada sección (Sobre mí, Educación, etc.) */
+
+section h3 {
+    color: #00ff9d;
+    margin-top: 0;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #2a2d45;
+}
+
+
+/* Párrafos dentro de las secciones */
+
+section p {
+    margin: 0 0 10px 0;
+}
+
+
+/* ========== LISTAS ========== */
+
+ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li strong {
+    color: #ffffff;
+}
+
+
+/* ========== HABILIDADES (dos columnas) ========== */
+
+.habilidades {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.habilidades div {
+    flex: 1;
+    min-width: 200px;
+}
+
+.habilidades h4 {
+    color: #ff6b9d;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+
+/* ========== CONTACTO ========== */
+
+/* Quitar los puntos de la lista de contacto */
+section:last-of-type ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+section:last-of-type li {
+    padding: 5px 0;
+    border-bottom: 1px dashed #2a2d45;
+}
+
+section:last-of-type li:last-child {
+    border-bottom: none;
+}
+
+
+/* ========== PIE DE PÁGINA ========== */
+
+footer {
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #2a2d45;
+    color: #888888;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* ========== ENLACES ========== */
+
+a {
+    color: #00ff9d;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff6b9d;
+    text-decoration: underline;
+}
+
+
+/* ========== PARA CELULARES ========== */
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    .foto-perfil {
+        width: 130px;
+        height: 130px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .habilidades {
+        gap: 15px;
+    }
+}
+
+.regresar {
+    position: absolute;
+    top: 18px;
+    left: 25px;
+    color: rgb(1, 82, 255);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    z-index: 10;
+}
